@@ -1,0 +1,110 @@
+.productScreen {
+    width:300px;
+    padding:1rem;
+    background: gainsboro;
+    box-shadow: 0 1px 4px black(0,0,0,0.4);
+    margin: 8px auto;
+    display: flex;
+    flex-direction:  column;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+
+.productScreen > img{
+    height: 170px;
+    border-radius: 8px;
+    width: 100%; 
+}
+
+.productInfo > p {
+    margin-bottom: 8px;
+}
+
+.productPrice {
+    font-weight: bold;
+}
+
+.productName {
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+.productDescription {
+    font-size: 0.8rem;
+}
+.info_button{
+    display: block;   
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background: white;
+    padding:8px 16px;
+    border: 1px solid black;
+    font-size: 1rem;
+    width:100%;
+    margin-top:5px;
+}
+
+.singleProductScreen{
+    max-width: 1300px;
+    margin:1rem auto;
+    display: flex;
+}
+
+.productScreenLeft{
+    display: flex;
+    flex: 0.8;
+}
+
+.leftImage{
+    margin:1rem;
+    flex:0.6;
+
+}
+.productInfo{
+    margin:1rem;
+    flex:0.4;
+    background-color: burlywood;
+    height: fit-content;
+    font-size: 0.9rem;
+}
+
+.leftName{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.leftDescription{
+    padding:1rem;
+    border-bottom: 1px solid black;
+}
+
+.productScreenRight{
+    flex:0.2;
+}
+.productInfoRight{
+   width: 250px;
+   margin:1rem; 
+   background: 0 1px 4px black;
+
+}
+.productInfoRight p {
+    padding:1rem;
+    font-size: 0.8rem;
+    grid-template-columns: repeat(2,1fr);
+}
+.rightbtn p > button{
+    grid-column: 1/-1;
+    padding: 10px 16px;
+    background: black;
+    color:wheat;
+    border:1px solid black;
+    cursor: pointer;
+}
+.rightQty input {
+    padding:10px 16px
+}
+
+.productsList{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
